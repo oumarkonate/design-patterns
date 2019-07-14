@@ -1,0 +1,20 @@
+.object-collection-container__octagon {
+  width: 150px;
+  height: 150px;
+  background: red;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  //Needs vertical adjustment
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.object-collection-container__octagon-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.object-collection-container__octagon-item:first-child {
+  margin-bottom: 10px;
+}
