@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }}: bests practices for managing objects collections{% endblock %}
+
+{% block body %}
+    <div class="object-collection-container">
+        {% for object in objectsCollection.objects %}
+            {% include object.template with {object: object} only %}
+        {% endfor %}
+    </div>
+{% endblock %}

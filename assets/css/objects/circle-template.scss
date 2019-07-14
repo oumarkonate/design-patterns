@@ -1,0 +1,21 @@
+.object-collection-container__circle {
+  width: 150px;
+  height: 150px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.object-collection-container__circle-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.object-collection-container__circle-item:first-child {
+    margin-bottom: 10px;
+}
+
+
+

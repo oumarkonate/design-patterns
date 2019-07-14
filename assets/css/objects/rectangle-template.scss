@@ -1,0 +1,17 @@
+.object-collection-container__rectangle {
+  width: 200px;
+  height: 150px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.object-collection-container__rectangle-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.object-collection-container__rectangle-item:first-child {
+  margin-bottom: 10px;
+}
