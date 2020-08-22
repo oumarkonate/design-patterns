@@ -17,6 +17,7 @@
         "symfony/yaml": "4.4.*"
     },
     "require-dev": {
+        "php-parallel-lint/php-parallel-lint": "^1.2",
         "phpro/grumphp": "^0.20.0",
         "symfony/web-server-bundle": "4.4.*"
     },
