@@ -32,6 +32,9 @@
             ".php_cs.dist"
         ]
     },
+    "pdepend/pdepend": {
+        "version": "2.8.0"
+    },
     "php": {
         "version": "7.3"
     },
@@ -40,6 +43,9 @@
     },
     "php-parallel-lint/php-parallel-lint": {
         "version": "v1.2.0"
+    },
+    "phpmd/phpmd": {
+        "version": "2.8.2"
     },
     "psr/cache": {
         "version": "1.0.1"
