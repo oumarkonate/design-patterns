@@ -3,3 +3,4 @@ grumphp:
     phplint: ~
     phpcsfixer: ~
     phpmd: ~
+    phpunit: ~
