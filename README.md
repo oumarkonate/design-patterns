@@ -57,3 +57,10 @@ bin/console server:run
 ```bash
 http://localhost:8000/objects-collection
 ```
+## Run code quality tools
+
+This project is configured with Grumphp with tools phplint, phpcsfixer, phpmd, phpunit, phpstan.
+* Run the following command line:
+```bash
+vendor/bin/grumphp run
+```
