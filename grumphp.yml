@@ -4,3 +4,4 @@ grumphp:
     phpcsfixer: ~
     phpmd: ~
     phpunit: ~
+    phpstan: ~
