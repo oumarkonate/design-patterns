@@ -3,7 +3,7 @@
 namespace App\Model;
 
 /**
- * Class Star
+ * Class Star.
  */
 final class Star
 {
@@ -13,19 +13,11 @@ final class Star
     /** @var string */
     private $description;
 
-    /**
-     * @return string
-     */
     public function getTitle(): string
     {
         return $this->title;
     }
 
-    /**
-     * @param string $title
-     *
-     * @return Star
-     */
     public function setTitle(string $title): Star
     {
         $this->title = $title;
@@ -33,19 +25,11 @@ final class Star
         return $this;
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @param string $description
-     *
-     * @return Star
-     */
     public function setDescription(string $description): Star
     {
         $this->description = $description;
@@ -53,4 +37,3 @@ final class Star
         return $this;
     }
 }
-

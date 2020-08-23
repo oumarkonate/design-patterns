@@ -2,45 +2,42 @@
 
 namespace App\Generator;
 
-use Exception;
 use App\Builder\ObjectsCollectionBuilderInterface;
 use App\Collection\ObjectsCollection;
+use Exception;
 use Psr\Log\LoggerInterface;
 
 /**
- * Class ObjectsCollectionGenerator
+ * Class ObjectsCollectionGenerator.
  */
 class ObjectsCollectionGenerator implements ObjectsCollectionGeneratorInterface
 {
     /** @var ObjectsCollectionBuilderInterface */
-    private $objectsCollectionBuilder;
+    private $builder;
 
     /** @var LoggerInterface */
     private $logger;
 
     /**
      * ObjectsCollectionGenerator constructor.
-     *
-     * @param ObjectsCollectionBuilderInterface $objectsCollectionBuilder
-     * @param LoggerInterface $logger
      */
-    public function __construct(ObjectsCollectionBuilderInterface $objectsCollectionBuilder, LoggerInterface $logger)
+    public function __construct(ObjectsCollectionBuilderInterface $builder, LoggerInterface $logger)
     {
-        $this->objectsCollectionBuilder = $objectsCollectionBuilder;
+        $this->builder = $builder;
         $this->logger = $logger;
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function generate(iterable $models): ?ObjectsCollection
     {
         foreach ($models as $model) {
-            $this->objectsCollectionBuilder->add($model);
+            $this->builder->add($model);
         }
 
         try {
-            return $this->objectsCollectionBuilder
+            return $this->builder
                 ->build()
                 ->getObjectsCollection()
             ;

@@ -3,7 +3,7 @@
 namespace App\Presenter;
 
 /**
- * Class AbstractPresenter
+ * Class AbstractPresenter.
  */
 abstract class AbstractPresenter implements PresenterInterface
 {
@@ -11,7 +11,7 @@ abstract class AbstractPresenter implements PresenterInterface
     protected $model;
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function attach($model): void
     {
@@ -19,15 +19,12 @@ abstract class AbstractPresenter implements PresenterInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getModel()
     {
         return $this->model;
     }
 
-    /**
-     * @return string
-     */
     abstract public function getTemplate(): string;
 }

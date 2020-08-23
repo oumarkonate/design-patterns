@@ -6,14 +6,12 @@ use App\Presenter\PresenterInterface;
 use Exception;
 
 /**
- * Interface ObjectsFactoryInterface
+ * Interface ObjectsFactoryInterface.
  */
 interface ObjectsFactoryInterface
 {
     /**
      * @param mixed $model
-     *
-     * @return PresenterInterface
      *
      * @throws Exception
      */

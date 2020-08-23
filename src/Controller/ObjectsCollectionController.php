@@ -4,30 +4,25 @@ namespace App\Controller;
 
 use App\Generator\ObjectsCollectionGeneratorInterface;
 use App\Model\Circle;
-use App\Model\Model1;
-use App\Model\Rectangle;
-use Exception;
-use App\Model\Star;
 use App\Model\Octagon;
+use App\Model\Rectangle;
+use App\Model\Star;
+use Exception;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * Class ObjectsCollectionController
+ * Class ObjectsCollectionController.
  */
 class ObjectsCollectionController extends AbstractController
 {
     /**
      * @Route("/objects-collection", name="objects_collection")
      *
-     * @param ObjectsCollectionGeneratorInterface $objectsCollectionGenerator
-     *
-     * @return Response
-     *
      * @throws Exception
      */
-    public function index(ObjectsCollectionGeneratorInterface $objectsCollectionGenerator): Response
+    public function index(ObjectsCollectionGeneratorInterface $generator): Response
     {
         $data = [
             (new Circle())->setTitle('Object1')->setDescription('circle'),
@@ -43,7 +38,7 @@ class ObjectsCollectionController extends AbstractController
         return $this->render(
             'objects-collection.html.twig',
             [
-                'objectsCollection' => $objectsCollectionGenerator->generate($data),
+                'objectsCollection' => $generator->generate($data),
             ]
         );
     }

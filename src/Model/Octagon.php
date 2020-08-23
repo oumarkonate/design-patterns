@@ -3,7 +3,7 @@
 namespace App\Model;
 
 /**
- * Class Octagon
+ * Class Octagon.
  */
 final class Octagon
 {
@@ -13,19 +13,11 @@ final class Octagon
     /** @var string */
     private $description;
 
-    /**
-     * @return string
-     */
     public function getTitle(): string
     {
         return $this->title;
     }
 
-    /**
-     * @param string $title
-     *
-     * @return Octagon
-     */
     public function setTitle(string $title): Octagon
     {
         $this->title = $title;
@@ -33,19 +25,11 @@ final class Octagon
         return $this;
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @param string $description
-     *
-     * @return Octagon
-     */
     public function setDescription(string $description): Octagon
     {
         $this->description = $description;
@@ -53,4 +37,3 @@ final class Octagon
         return $this;
     }
 }
-

@@ -3,12 +3,12 @@
 namespace App\Presenter;
 
 /**
- * Class OctagonPresenter
+ * Class OctagonPresenter.
  */
 final class OctagonPresenter extends AbstractPresenter
 {
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getTemplate(): string
     {

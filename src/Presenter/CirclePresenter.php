@@ -3,12 +3,12 @@
 namespace App\Presenter;
 
 /**
- * Class CirclePresenter
+ * Class CirclePresenter.
  */
 final class CirclePresenter extends AbstractPresenter
 {
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getTemplate(): string
     {

@@ -2,11 +2,11 @@
 
 namespace App\Builder;
 
-use App\Factory\ObjectsFactoryInterface;
 use App\Collection\ObjectsCollection;
+use App\Factory\ObjectsFactoryInterface;
 
 /**
- * Class ObjectsCollectionBuilder
+ * Class ObjectsCollectionBuilder.
  */
 class ObjectsCollectionBuilder implements ObjectsCollectionBuilderInterface
 {
@@ -21,8 +21,6 @@ class ObjectsCollectionBuilder implements ObjectsCollectionBuilderInterface
 
     /**
      * ObjectsCollectionBuilder constructor.
-     *
-     * @param ObjectsFactoryInterface $objectsFactory
      */
     public function __construct(ObjectsFactoryInterface $objectsFactory)
     {
@@ -31,7 +29,7 @@ class ObjectsCollectionBuilder implements ObjectsCollectionBuilderInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function add($model): ObjectsCollectionBuilderInterface
     {
@@ -41,7 +39,7 @@ class ObjectsCollectionBuilder implements ObjectsCollectionBuilderInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function build(): ObjectsCollectionBuilderInterface
     {
@@ -55,7 +53,7 @@ class ObjectsCollectionBuilder implements ObjectsCollectionBuilderInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getObjectsCollection(): ObjectsCollection
     {

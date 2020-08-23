@@ -3,12 +3,12 @@
 namespace App\Presenter;
 
 /**
- * Class StarPresenter
+ * Class StarPresenter.
  */
 final class StarPresenter extends AbstractPresenter
 {
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getTemplate(): string
     {

@@ -3,7 +3,7 @@
 namespace App\Presenter;
 
 /**
- * Interface PresenterInterface
+ * Interface PresenterInterface.
  */
 interface PresenterInterface
 {
